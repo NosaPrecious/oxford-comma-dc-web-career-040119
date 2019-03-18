@@ -15,12 +15,12 @@ def  oxford_comma(array)
     n_arr.delete_at(-2)
     n_arr.insert(-2, "and")
     n_arr.join(" ")
-    when num_range > 3
-      array.insert(-2, "and")
-   n_str= array.join( ", ")
+  when num_range
+    array.insert(-2, "and")
+    n_str= array.join( ", ")
     n_arr= n_str.split
-    n_arr.delete_at(-2)
-    n_arr.insert(-2, "and")
+    n_arr.delete_at(-3)
+    n_arr.insert(-3, "and")
     n_arr.join(" ")
   else
     array.join(', ')
