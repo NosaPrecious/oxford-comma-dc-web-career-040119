@@ -18,8 +18,7 @@ def  oxford_comma(array)
   when num_range
     array.insert(-2, "and")
     n_str= array.join( ", ")
-    n_arr= n_str.split
-  
+    n_str= n_str.gsub "and,", "and"
   else
     array.join(', ')
   end
