@@ -19,9 +19,7 @@ def  oxford_comma(array)
     array.insert(-2, "and")
     n_str= array.join( ", ")
     n_arr= n_str.split
-    n_arr.delete_at(-3)
-    n_arr.insert(-3, "and")
-    n_arr.join(" ")
+  
   else
     array.join(', ')
   end
